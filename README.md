@@ -3,6 +3,7 @@
 + 框架基于@sex-pomelo(pomelo 的升级版，原官方pomelo的后续未做更新，不支持很多新特性顾有网友使用此版本)
 + 介于@sex-pomelo的改动还是没有改掉使用回调方式写代码的问题，顾由此改动
 + 核心改动新增/app/basic 目录中，使用es6 async/await 特性，完美避免使用回调方式写逻辑代码，支持同步方式写异步代码同时兼容原回调方式。改动部分都在@sex-pomelo 框架外。
++ [github 源码](https://github.com/kilet/pomelox-chat.git)
 + 示例参考  Visit [demo Chatofpomelo](https://github.com/NetEase/chatofpomelo) 
 
 ## 参考网址
