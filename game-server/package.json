@@ -1,0 +1,28 @@
+{
+  "name": "redchat",
+  "version": "0.0.2",
+  "private": false,
+  "dependencies": {
+    "@alicloud/sms-sdk": "^1.1.6",
+    "@sex-pomelo/pomelo-i18n": "0.0.2",
+    "@sex-pomelo/sex-pomelo": "2.2.26",
+    "@sex-pomelo/sex-pomelo-logger": "^0.1.13",
+    "crc": "0.2.0",
+    "crypto": "^1.0.1",
+    "generic-pool": "^3.7.1",
+    "moment": "^2.29.1",
+    "mysql": "^2.18.1",
+    "redis": "^3.0.2",
+    "utility": "^1.17.0",
+    "wechat-pay": "^0.3.2",
+    "xml2js": "^0.4.23"
+  },
+  "scripts": {
+    "start": "pomelo start --env production -D",
+    "stop": "pomelo stop",
+    "dev": "node app",
+    "config": "node-gyp configure --release",
+    "build": "node-gyp build",
+    "rebuild": "node-gyp rebuild"
+  }
+}

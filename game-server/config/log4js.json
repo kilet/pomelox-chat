@@ -1,0 +1,91 @@
+{
+  "appenders": {
+    "console":{ "type":"console"},
+    "node-log": {
+      "type": "file",
+      "filename": "./logs/node-log-${opts:serverId}.log",
+      "maxLogSize": 1048576,
+      "layout": {"type": "basic"},
+      "backups": 5
+    },
+    "pomelo": {
+      "type": "file",
+      "filename": "${opts:base}/logs/pomelo-${opts:serverId}.log",
+      "maxLogSize": 1048576,
+      "layout": {"type": "basic"},
+      "backups": 5
+    },
+    "con-log": {
+      "type": "file",
+      "filename": "${opts:base}/logs/con-log-${opts:serverId}.log",
+      "pattern": "connector",
+      "maxLogSize": 1048576,
+      "layout": {"type": "basic"},
+      "backups": 5
+    },
+    "rpc-log": {
+      "type": "file",
+      "filename": "${opts:base}/logs/rpc-log-${opts:serverId}.log",
+      "maxLogSize": 1048576,
+      "layout": {"type": "basic"},
+      "backups": 5
+    },
+    "pomelo-rpc": {
+      "type": "file",
+      "filename": "${opts:base}/logs/pomelo-rpc-log-${opts:serverId}.log",
+      "maxLogSize": 1048576,
+      "layout": {"type": "basic"},
+      "backups": 5
+    },
+    "forward-log": {
+      "type": "file",
+      "filename": "${opts:base}/logs/forward-log-${opts:serverId}.log",
+      "maxLogSize": 1048576,
+      "layout": {"type": "basic"},
+      "backups": 5
+    },
+    "crash-log": {
+      "type": "file",
+      "filename": "${opts:base}/logs/crash.log",
+      "maxLogSize": 1048576,
+      "layout": {"type": "basic"},
+      "backups": 5
+    },
+    "admin-log": {
+      "type": "file",
+      "filename": "${opts:base}/logs/admin.log",
+      "maxLogSize": 1048576,
+      "layout": {"type": "basic"},
+      "backups": 5
+    },
+    "pay-log": {
+      "type": "file",
+      "filename": "${opts:base}/logs/pay.log",
+      "maxLogSize": 1048576,
+      "layout": {"type": "basic"},
+      "backups": 5
+    },
+    "weber-log": {
+      "type": "file",
+      "filename": "${opts:base}/logs/weber.log",
+      "maxLogSize": 1048576,
+      "layout": {"type": "basic"},
+      "backups": 5
+    }
+  },
+
+  "categories": {
+    "default": {"appenders": ["console", "node-log"], "level": "info"},
+    "pomelo": {"appenders": ["console", "pomelo"], "level": "info"},
+    "con-log": {"appenders": ["console", "con-log"], "level": "info"},
+    "rpc-log": {"appenders": ["console", "rpc-log"], "level": "info"},
+    "pomelo-rpc": {"appenders": ["console", "pomelo-rpc"], "level": "error"},
+    "forward-log": {"appenders": ["console", "forward-log"], "level": "warn"},
+    "crash-log": {"appenders": ["console", "crash-log"], "level": "info"},
+    "admin-log": {"appenders": ["console", "admin-log"], "level": "info"},
+    "pay-log": {"appenders": ["console", "pay-log"], "level": "info"},
+    "weber-log": {"appenders": ["console", "weber-log"], "level": "info"}
+  },
+  "lineDebug": false,
+  "reloadSecs":10
+}

@@ -1,0 +1,14 @@
+﻿{
+    "development": {
+        "host": "127.0.0.1",
+        "port": "6379",
+        "database": "0",
+        "password": "rds2021s3B8"
+    },
+    "production": {
+        "host": "192.168.0.142",
+        "port": "6379",
+        "database": "0",
+        "password": "rds2021s3B8"
+    }
+}

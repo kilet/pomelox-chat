@@ -1,0 +1,22 @@
+[
+    {
+        "type": "connector",
+        "token": "agarxhqb98rpajloaxn34ga8xrunpagkjwlaw3ruxnpaagl29w4rxnx"
+    },
+    {
+        "type": "chat",
+        "token": "agarxhqb98rpajloaxn34ga8xrunpagkjwlaw3ruxnpaagl29w4rxnx"
+    },
+    {
+        "type": "gate",
+        "token": "agarxhqb98rpajloaxn34ga8xrunpagkjwlaw3ruxnpaagl29w4rxnx"
+    },
+    {
+        "type": "player",
+        "token": "agarxhqb98rpajloaxn34ga8xrunpagkjwlaw3ruxnpaagl29w4rxnx"
+    },
+    {
+        "type": "comm",
+        "token": "agarxhqb98rpajloaxn34ga8xrunpagkjwlaw3ruxnpaagl29w4rxnx"
+    }
+]
